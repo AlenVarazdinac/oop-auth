@@ -10,8 +10,8 @@ include_once 'userstuff.php';
 	<meta charset="utf-8" />
 </head>
 <body>
-	<?php include 'success.php';?>
-	<?php include 'errors.php';?>
+	<?php include 'messages/success.php';?>
+	<?php include 'messages/errors.php';?>
 	<?php if(isset($_SESSION['user'])):?>
 		<h3>You are logged in as <?php echo $_SESSION['user']->name;?></h3>
 		<a href="/projects/oop_auth/changepassword.php">Change password</a>

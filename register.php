@@ -14,7 +14,8 @@ if(isset($_POST['name']) && isset($_POST['email']) && $_POST['password']){
 	<meta charset="utf-8" />
 </head>
 <body>
-	<?php include('errors.php');?>
+	<?php include 'messages/success.php';?>
+	<?php include 'messages/errors.php';?>
 	<form method="post" action="">
 		<label for="name">Name</label>
 		<input type="text" id="name" name="name" required placeholder="Enter name" />
